@@ -1,0 +1,15 @@
+{
+  "_comment": "Difficulty curve. Numeric fields are linearly interpolated between phase anchors (t in seconds). After the last anchor, omega grows and clear_time shrinks at the given rates, bounded by omega_max / clear_min.",
+  "phase_names": ["INTRO", "WARM-UP", "ADVANCED", "HARD", "EXTREME"],
+  "phases": [
+    {"t": 0,  "omega": 1.30, "clear_time": 1.60, "double_chance": 0.0,  "pattern_chance": 0.0,  "w_static": 1.0,  "w_moving": 0.0,  "w_block": 0.0,  "w_zone": 0.0,  "mixed_chance": 0.0},
+    {"t": 15, "omega": 1.55, "clear_time": 1.30, "double_chance": 0.0,  "pattern_chance": 0.0,  "w_static": 0.70, "w_moving": 0.30, "w_block": 0.0,  "w_zone": 0.0,  "mixed_chance": 0.0},
+    {"t": 30, "omega": 1.80, "clear_time": 1.05, "double_chance": 0.30, "pattern_chance": 0.15, "w_static": 0.45, "w_moving": 0.25, "w_block": 0.20, "w_zone": 0.10, "mixed_chance": 0.15},
+    {"t": 45, "omega": 2.10, "clear_time": 0.88, "double_chance": 0.50, "pattern_chance": 0.28, "w_static": 0.35, "w_moving": 0.25, "w_block": 0.25, "w_zone": 0.15, "mixed_chance": 0.30},
+    {"t": 60, "omega": 2.40, "clear_time": 0.74, "double_chance": 0.65, "pattern_chance": 0.40, "w_static": 0.30, "w_moving": 0.25, "w_block": 0.25, "w_zone": 0.20, "mixed_chance": 0.45}
+  ],
+  "omega_growth_per_s": 0.012,
+  "omega_max": 3.0,
+  "clear_shrink_per_s": 0.0015,
+  "clear_min": 0.62
+}
